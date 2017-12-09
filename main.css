@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid #303D74;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    letter-spacing: 1px;
+}
+
+.header {
+    background-color: #303D74;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.column-label {
+    background-color: #767985;
+    margin: 0;
+    padding: 0;
+    padding: 1px 0px 1px 8px;
+    margin-bottom: 7px;
+    color: #ffffff;
+    border-radius: 5px; /* this gives you rounded corners */
+}
+
+input[type=submit] {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #CAC6BE;
+    color: #ffffff;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.12), 1px 2px 2px rgba(0,0,0,0.24); 
+    border-radius: 8px; /* this gives you rounded corners */
+    border-radius: 8px 8px 8px 0px; /* each corner clockwise starting from top left */
+    transition: all 0.3s ease 0s; /* gives the buttons a fade effect */
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+}
+
+input.on[type=submit] {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #2D882D;
+    color: #ffffff;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.12), 1px 2px 2px rgba(0,0,0,0.24); 
+    border-radius: 8px; /* this gives you rounded corners */
+    border-radius: 8px 8px 8px 0px; /* each corner clockwise starting from top left */
+    transition: all 0.3s ease 0s; /* gives the buttons a fade effect */
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+}
+
+input.off[type=submit] {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #AA3939;
+    color: #ffffff;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.12), 1px 2px 2px rgba(0,0,0,0.24); 
+    border-radius: 8px; /* this gives you rounded corners */
+    border-radius: 8px 8px 8px 0px; /* each corner clockwise starting from top left */
+    transition: all 0.3s ease 0s; /* gives the buttons a fade effect */
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+}
+
+input.green-hover[type=submit]:hover {
+    background-color: #2D882D; /* green */
+}
+
+input.red-hover[type=submit]:hover {
+    background-color: #AA3939; /* red */
+}
+
+.footer {
+    background-color: #303D74;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* for mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* for tablets: */
+@media only screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+/* for desktops */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
